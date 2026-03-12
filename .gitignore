@@ -32,7 +32,16 @@ desktop.ini
 *.sys
 
 # Compiled executables (rebuild from source)
-*.exe
+# Exclude build artifacts, but allow release binaries
+target/
+*.pdb
+*.ilk
+
+# Allow release binaries for distribution
+!releases/*.exe
+!executor.exe
+!controller.exe
+!ladybug.exe
 
 # Logs and temp
 *.log
@@ -42,3 +51,25 @@ desktop.ini
 # Sensitive / generated data
 *.last_run_timestamp
 kernel_addresses.txt
+
+# Setup scripts (don't need these in repo)
+push_to_github.ps1
+setup_github.ps1
+
+# Secrets and credentials - NEVER COMMIT THESE
+.env
+.env.*
+*.env
+secrets/
+secrets.*
+*secret*
+*password*
+*credential*
+*.pem
+*.key
+*.p12
+*.pfx
+*_token*
+*_api_key*
+config.local.*
+settings.local.*

@@ -1,0 +1,5 @@
+# Releases folder
+# Copy compiled binaries here for distribution
+# executor.exe - VM agent
+# controller.exe - Host controller
+# ladybug.exe - Standalone fuzzer
