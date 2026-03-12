@@ -21,8 +21,9 @@ from ghidra.app.decompiler import DecompInterface
 from ghidra.program.model.symbol import SymbolType
 from ghidra.program.model.listing import CodeUnit
 
-# Output directory - save to user's fuzzing folder
-OUTPUT_DIR = "C:\\Users\\const\\Desktop\\Tools\\Fuzzing\\windriver_fuzzer_rs\\scripts"
+# Output directory - save next to this script
+import os as _os
+OUTPUT_DIR = _os.path.dirname(_os.path.abspath(getSourceFile().getAbsolutePath()))
 
 class DriverAnalyzer:
     def __init__(self):

@@ -161,8 +161,8 @@ public class analyze_ioctls extends GhidraScript {
     
     private void saveResults() throws Exception {
         String driverName = currentProgram.getName().replace(".sys", "").replace(".SYS", "");
-        String outputPath = "C:\\Users\\const\\Desktop\\Tools\\Fuzzing\\windriver_fuzzer_rs\\scripts\\" + 
-                           driverName + "_ghidra_analysis.json";
+        String scriptDir = getSourceFile().getParentFile().getAbsolutePath();
+        String outputPath = scriptDir + File.separator + driverName + "_ghidra_analysis.json";
         
         println("[*] Saving results to: " + outputPath);
         

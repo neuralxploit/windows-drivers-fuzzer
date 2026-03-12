@@ -10,11 +10,17 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-# Paths
-$GhidraPath = "C:\Users\const\Downloads\ghidra_12.0_PUBLIC_20251205\ghidra_12.0_PUBLIC\support\analyzeHeadless.bat"
-$ProjectDir = "C:\Users\const\Desktop\Tools\Fuzzing\ghidra_projects"
-$ScriptDir = "C:\Users\const\Desktop\Tools\Fuzzing\windriver_fuzzer_rs\scripts"
-$OutputDir = "C:\Users\const\Desktop\Tools\Fuzzing\vm_fuzzing"
+# Paths - CONFIGURE THESE FOR YOUR SETUP
+# Set GHIDRA_HOME env var or edit this path to point to your Ghidra installation
+if ($env:GHIDRA_HOME) {
+    $GhidraPath = Join-Path $env:GHIDRA_HOME "support\analyzeHeadless.bat"
+} else {
+    $GhidraPath = "C:\ghidra\support\analyzeHeadless.bat"
+    Write-Host "[!] GHIDRA_HOME not set. Set it or edit `$GhidraPath in this script." -ForegroundColor Yellow
+}
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$ProjectDir = Join-Path $ScriptDir "..\ghidra_projects"
+$OutputDir = Join-Path $ScriptDir "..\output"
 
 # Resolve driver path - accept any path
 if (Test-Path $DriverInput) {

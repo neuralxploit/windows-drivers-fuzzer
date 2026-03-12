@@ -216,7 +216,7 @@ def main():
         if not input_path.exists():
             print(f"[!] Not found: {input_path}")
             print(f"[*] Run Ghidra first:")
-            print(f'    & "C:\\Users\\const\\Downloads\\ghidra_12.0_PUBLIC_20251205\\ghidra_12.0_PUBLIC\\support\\analyzeHeadless.bat" "C:\\Users\\const\\Desktop\\Tools\\Fuzzing\\ghidra_projects" X -import "C:\\Windows\\System32\\drivers\\{driver_name}.sys" -scriptPath "C:\\Users\\const\\Desktop\\Tools\\Fuzzing\\windriver_fuzzer_rs\\scripts" -postScript analyze_ioctls_v2.java -deleteProject')
+            print(f'    .\\analyze_driver.ps1 C:\\Windows\\System32\\drivers\\{driver_name}.sys')
             sys.exit(1)
     
     analyze_and_convert(input_path, driver_name)
