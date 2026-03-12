@@ -24,6 +24,59 @@ A coverage-guided Windows kernel driver fuzzer written in Rust. Ladybug can fuzz
 
 This two-agent setup lets you fuzz kernel drivers without risking your host. When the VM BSODs, ladybug just waits for it to reboot and reconnects.
 
+## Pre-Fuzzing: Automated Driver Analysis with Ghidra
+
+Before fuzzing, you need to know which IOCTLs the driver handles. Ladybug includes a Ghidra-based pipeline that automatically decompiles any `.sys` driver and extracts every IOCTL handler.
+
+```
+  driver.sys
+      │
+      ▼
+┌─────────────────────────────────────────┐
+│  analyze_driver.ps1                     │
+│                                         │
+│  1. Ghidra headless decompiles driver   │
+│  2. Java script finds IRP_MJ_DEVICE_   │
+│     CONTROL handler (param + 0xe0)      │
+│  3. Extracts all IOCTL codes + methods  │
+│  4. Detects dangerous APIs (MmMapIo,    │
+│     MSR read/write, ProbeForWrite...)   │
+│  5. Python sorts by risk level          │
+│                                         │
+│  METHOD_NEITHER = HIGH RISK (raw ptrs)  │
+│  METHOD_DIRECT  = MEDIUM RISK (MDL)     │
+│  METHOD_BUFFERED = LOW RISK (copies)    │
+└─────────────────────────────────────────┘
+      │
+      ▼
+  driver_analysis.json    ← feed to ladybug
+  driver_high_risk.json   ← high-risk IOCTLs only
+```
+
+**One command does everything:**
+```powershell
+.\scripts\analyze_driver.ps1 C:\path\to\driver.sys
+```
+
+This runs Ghidra headless with a custom Java script (`analyze_ioctls_v2.java`) that:
+- Finds the `IRP_MJ_DEVICE_CONTROL` dispatch handler by decompiling and matching the `param + 0xe0` pattern
+- Walks the call graph 2 levels deep to find IOCTLs in sub-handlers
+- Reads IOCTL dispatch tables from data sections
+- Detects dangerous kernel APIs (`MmMapIoSpace`, `__writemsr`, `ZwMapViewOfSection`, etc.)
+- Outputs a JSON with every IOCTL, its transfer method, device type, and source function
+
+Then `convert_ioctls.py` sorts them by risk and outputs files ready for ladybug:
+
+```powershell
+# Fuzz all discovered IOCTLs (sorted by risk, high-risk first)
+.\ladybug.exe --device "\\.\TargetDriver" --analysis driver_analysis.json
+
+# Fuzz only high-risk IOCTLs (METHOD_NEITHER + METHOD_DIRECT)
+.\ladybug.exe --device "\\.\TargetDriver" --analysis driver_high_risk.json
+```
+
+**Requirements:** [Ghidra](https://ghidra-sre.org/) installed. Edit the `$GhidraPath` variable in `analyze_driver.ps1` to point to your Ghidra installation.
+
 ## Features
 
 - **Response-Based Coverage**: Tracks unique responses and error codes to detect new code paths
@@ -36,6 +89,8 @@ This two-agent setup lets you fuzz kernel drivers without risking your host. Whe
 - **Multiple Modes**: Stateful/UAF fuzzing, CLFS fuzzing, Win32k syscall fuzzing, GDI race fuzzing
 - **RL-Guided Fuzzing**: Reinforcement learning to optimize mutation strategies
 - **Driver Hunter**: Scan for vulnerable 3rd-party drivers
+- **Ghidra Integration**: Automated driver decompilation and IOCTL extraction with risk-based prioritization
+- **Crash Triage Tools**: Post-fuzzing crash analysis and exploitability ranking
 
 ## Building
 
@@ -174,6 +229,21 @@ src/
 ├── driver_hunter.rs     - 3rd-party driver scanner
 └── bin/
     └── executor.rs      - TCP executor agent (runs in VM)
+
+scripts/
+├── analyze_driver.ps1   - All-in-one: Ghidra decompile + IOCTL extraction + risk sorting
+├── analyze_ioctls_v2.java - Ghidra script: finds dispatch handler, extracts IOCTLs from decompiled code
+├── convert_ioctls.py    - Converts Ghidra output to Ladybug format, sorts by risk level
+└── quick_scan.py        - Fast heuristic IOCTL scanner (no Ghidra needed)
+
+tools/
+├── triage_crash.py      - Analyze individual crashes for exploitability
+├── bulk_triage.py       - Bulk triage all crashes, rank by exploitability
+├── stress_poc.py        - Test crash reproducibility with repeated calls
+├── scan_driver.py       - Universal IOCTL scanner from driver binaries
+└── angr_analyzer/
+    ├── quick_scan.py    - Fast heuristic analysis without symbolic execution
+    └── analyze_driver.py - Deep analysis with Angr symbolic execution
 ```
 
 ## Safety Warning
