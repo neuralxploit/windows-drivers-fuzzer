@@ -1,0 +1,19 @@
+{
+    "device": "\\\\.\\ahcache",
+    "driver": "ahcache.sys",
+    "analysis": "Ghidra reverse engineering - FUN_1400380e0 dispatch",
+    "ioctls": [
+        {"code": 2228224, "hex": "0x220000", "name": "IOCTL_AHCACHE_0", "handler": "FUN_140038a6c", "function": 0},
+        {"code": 2228228, "hex": "0x220004", "name": "IOCTL_AHCACHE_1", "handler": "FUN_140029980", "function": 1},
+        {"code": 2228232, "hex": "0x220008", "name": "IOCTL_AHCACHE_2", "handler": "FUN_1400367ac", "function": 2},
+        {"code": 2228236, "hex": "0x22000C", "name": "IOCTL_AHCACHE_3", "handler": "FUN_1400291e4", "function": 3},
+        {"code": 2228240, "hex": "0x220010", "name": "IOCTL_AHCACHE_4", "handler": "FUN_140029bf8", "function": 4},
+        {"code": 2228244, "hex": "0x220014", "name": "IOCTL_AHCACHE_5", "handler": "FUN_140029a84", "function": 5},
+        {"code": 2228248, "hex": "0x220018", "name": "IOCTL_AHCACHE_6", "handler": "FUN_140038660", "function": 6},
+        {"code": 2228252, "hex": "0x22001C", "name": "IOCTL_AHCACHE_7", "handler": "FUN_140025828", "function": 7},
+        {"code": 2228256, "hex": "0x220020", "name": "IOCTL_AHCACHE_8", "handler": "FUN_14004492c", "function": 8, "note": "checks access mode param_3==1"},
+        {"code": 2228260, "hex": "0x220024", "name": "IOCTL_AHCACHE_9", "handler": "INVALID_FALLS_THROUGH", "function": 9},
+        {"code": 2228264, "hex": "0x220028", "name": "IOCTL_AHCACHE_10", "handler": "FUN_140029354", "function": 10},
+        {"code": 2228268, "hex": "0x22002C", "name": "IOCTL_AHCACHE_11", "handler": "FUN_140038cc4", "function": 11}
+    ]
+}

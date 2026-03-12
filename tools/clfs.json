@@ -1,0 +1,417 @@
+{
+  "driver": "clfs.sys",
+  "device_path": "\\\\.\\clfs",
+  "ioctl_count": 41,
+  "ioctls": {
+    "0x00222444": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 2321,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00222824": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 2569,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022300B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3074,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223423": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3336,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x002238E8": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3642,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223B20": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3784,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223D00": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3904,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223DFF": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3967,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022641C": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 2311,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227420": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3336,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022A9E8": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 2682,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B5E8": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3450,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B80A": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3586,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B855": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3605,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B8CC": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3635,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B8DE": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3639,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B8FF": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3647,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B920": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3656,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B941": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3664,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B948": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3666,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9AC": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3691,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9C5": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3697,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9DB": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3702,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9F7": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3709,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9FF": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3711,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA20": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3720,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA24": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3721,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA29": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3722,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA2E": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3723,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA33": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3724,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BB07": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3777,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BB0A": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3778,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BB5E": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3799,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BB68": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3802,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BC41": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3856,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF0A": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 4034,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF0E": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 4035,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF18": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 4038,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF41": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 4048,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022ED20": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 2888,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F981": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 3680,
+      "device_type": 34,
+      "source": "driver"
+    }
+  }
+}

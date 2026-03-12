@@ -1,0 +1,491 @@
+{
+  "driver": "HWiNFO_x64_214.sys",
+  "ioctl_count": 53,
+  "dangerous_functions": [
+    "ExAllocatePool in FUN_140002094",
+    "ExAllocatePool in FUN_140002314",
+    "ExAllocatePool in FUN_1400024e8",
+    "ExAllocatePool in FUN_140002a20",
+    "MmMapIoSpace in FUN_140002a20",
+    "ExAllocatePool in FUN_140008a84",
+    "ExAllocatePool in FUN_140008c90",
+    "MmMapIoSpace in FUN_140008c90"
+  ],
+  "0x00123419": {
+    "code": 1192985,
+    "method": "IN_DIRECT",
+    "device_type": "0x0012",
+    "function": "0xD06",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000b930"
+  },
+  "0x00125C82": {
+    "code": 1203330,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0012",
+    "function": "0x720",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@1400075a0"
+  },
+  "0x002200F0": {
+    "code": 2228464,
+    "method": "BUFFERED",
+    "device_type": "0x0022",
+    "function": "0x03C",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@1400000f4"
+  },
+  "0x00220305": {
+    "code": 2228997,
+    "method": "IN_DIRECT",
+    "device_type": "0x0022",
+    "function": "0x0C1",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@140009f30"
+  },
+  "0x002203E8": {
+    "code": 2229224,
+    "method": "BUFFERED",
+    "device_type": "0x0022",
+    "function": "0x0FA",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@140006b98"
+  },
+  "0x00224305": {
+    "code": 2245381,
+    "method": "IN_DIRECT",
+    "device_type": "0x0022",
+    "function": "0x0C1",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@140009ef8"
+  },
+  "0x00224F05": {
+    "code": 2248453,
+    "method": "IN_DIRECT",
+    "device_type": "0x0022",
+    "function": "0x3C1",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@140009ee4"
+  },
+  "0x00225315": {
+    "code": 2249493,
+    "method": "IN_DIRECT",
+    "device_type": "0x0022",
+    "function": "0x4C5",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@140008a48"
+  },
+  "0x0022A715": {
+    "code": 2270997,
+    "method": "IN_DIRECT",
+    "device_type": "0x0022",
+    "function": "0x9C5",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@140009e8c"
+  },
+  "0x0022D70D": {
+    "code": 2283277,
+    "method": "IN_DIRECT",
+    "device_type": "0x0022",
+    "function": "0x5C3",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140009e64"
+  },
+  "0x0022E7E8": {
+    "code": 2287592,
+    "method": "BUFFERED",
+    "device_type": "0x0022",
+    "function": "0x9FA",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140006b00"
+  },
+  "0x0022F882": {
+    "code": 2291842,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0022",
+    "function": "0xE20",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140006504"
+  },
+  "0x002710BB": {
+    "code": 2560187,
+    "method": "NEITHER",
+    "device_type": "0x0027",
+    "function": "0x42E",
+    "access": "ANY",
+    "priority": 90,
+    "source": "data@140004170"
+  },
+  "0x002710BC": {
+    "code": 2560188,
+    "method": "BUFFERED",
+    "device_type": "0x0027",
+    "function": "0x42F",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@140005450"
+  },
+  "0x00273B15": {
+    "code": 2571029,
+    "method": "IN_DIRECT",
+    "device_type": "0x0027",
+    "function": "0xEC5",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@140008940"
+  },
+  "0x00277B15": {
+    "code": 2587413,
+    "method": "IN_DIRECT",
+    "device_type": "0x0027",
+    "function": "0xEC5",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@1400089c0"
+  },
+  "0x00279F15": {
+    "code": 2596629,
+    "method": "IN_DIRECT",
+    "device_type": "0x0027",
+    "function": "0x7C5",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@1400088dc"
+  },
+  "0x002D0039": {
+    "code": 2949177,
+    "method": "IN_DIRECT",
+    "device_type": "0x002D",
+    "function": "0x00E",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000f2c0"
+  },
+  "0x002D37E8": {
+    "code": 2963432,
+    "method": "BUFFERED",
+    "device_type": "0x002D",
+    "function": "0xDFA",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@140006100"
+  },
+  "0x002DF705": {
+    "code": 3012357,
+    "method": "IN_DIRECT",
+    "device_type": "0x002D",
+    "function": "0xDC1",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@14000929c"
+  },
+  "0x80000020": {
+    "code": 2147483680,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x008",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000f014"
+  },
+  "0x80000038": {
+    "code": 2147483704,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x00E",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000f01c"
+  },
+  "0x80000050": {
+    "code": 2147483728,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x014",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000f034"
+  },
+  "0x80000068": {
+    "code": 2147483752,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x01A",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000f04c"
+  },
+  "0x800000A0": {
+    "code": 2147483808,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x028",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000f030"
+  },
+  "0x8000B848": {
+    "code": 2147530824,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0xE12",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@140003908"
+  },
+  "0x8000CE81": {
+    "code": 2147536513,
+    "method": "IN_DIRECT",
+    "device_type": "0x8000",
+    "function": "0x3A0",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140009300"
+  },
+  "0x80067404": {
+    "code": 2147906564,
+    "method": "BUFFERED",
+    "device_type": "0x8006",
+    "function": "0xD01",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@14000a6f8"
+  },
+  "0x800B7538": {
+    "code": 2148234552,
+    "method": "BUFFERED",
+    "device_type": "0x800B",
+    "function": "0xD4E",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@14000803c"
+  },
+  "0x800C418D": {
+    "code": 2148286861,
+    "method": "IN_DIRECT",
+    "device_type": "0x800C",
+    "function": "0x063",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@14000a6b4"
+  },
+  "0x800C8D48": {
+    "code": 2148306248,
+    "method": "BUFFERED",
+    "device_type": "0x800C",
+    "function": "0x352",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@140005fa8"
+  },
+  "0x800CE180": {
+    "code": 2148327808,
+    "method": "BUFFERED",
+    "device_type": "0x800C",
+    "function": "0x860",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140009cb8"
+  },
+  "0x801474D2": {
+    "code": 2148824274,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8014",
+    "function": "0xD34",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@1400082dc"
+  },
+  "0x801F0F00": {
+    "code": 2149519104,
+    "method": "BUFFERED",
+    "device_type": "0x801F",
+    "function": "0x3C0",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000a938"
+  },
+  "0x801F0FC3": {
+    "code": 2149519299,
+    "method": "NEITHER",
+    "device_type": "0x801F",
+    "function": "0x3F0",
+    "access": "ANY",
+    "priority": 90,
+    "source": "data@14000a7f8"
+  },
+  "0x80248488": {
+    "code": 2149876872,
+    "method": "BUFFERED",
+    "device_type": "0x8024",
+    "function": "0x122",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@14000435c"
+  },
+  "0x8024848B": {
+    "code": 2149876875,
+    "method": "NEITHER",
+    "device_type": "0x8024",
+    "function": "0x122",
+    "access": "WRITE",
+    "priority": 90,
+    "source": "data@1400086dc"
+  },
+  "0x80248C8D": {
+    "code": 2149878925,
+    "method": "IN_DIRECT",
+    "device_type": "0x8024",
+    "function": "0x323",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@1400086a0"
+  },
+  "0x80248CB7": {
+    "code": 2149878967,
+    "method": "NEITHER",
+    "device_type": "0x8024",
+    "function": "0x32D",
+    "access": "WRITE",
+    "priority": 90,
+    "source": "data@1400065a0"
+  },
+  "0x802494B6": {
+    "code": 2149881014,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8024",
+    "function": "0x52D",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@1400041d4"
+  },
+  "0x8038EC83": {
+    "code": 2151214211,
+    "method": "NEITHER",
+    "device_type": "0x8038",
+    "function": "0xB20",
+    "access": "READ|WRITE",
+    "priority": 90,
+    "source": "data@1400095d4"
+  },
+  "0x8041F08A": {
+    "code": 2151805066,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8041",
+    "function": "0xC22",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140007d6c"
+  },
+  "0x8086B941": {
+    "code": 2156312897,
+    "method": "IN_DIRECT",
+    "device_type": "0x8086",
+    "function": "0xE50",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@140006370"
+  },
+  "0x8086F981": {
+    "code": 2156329345,
+    "method": "IN_DIRECT",
+    "device_type": "0x8086",
+    "function": "0xE60",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140001c94"
+  },
+  "0x80884400": {
+    "code": 2156413952,
+    "method": "BUFFERED",
+    "device_type": "0x8088",
+    "function": "0x100",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@140009b90"
+  },
+  "0x808B4876": {
+    "code": 2156611702,
+    "method": "OUT_DIRECT",
+    "device_type": "0x808B",
+    "function": "0x21D",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@140001894"
+  },
+  "0x808D4100": {
+    "code": 2156740864,
+    "method": "BUFFERED",
+    "device_type": "0x808D",
+    "function": "0x040",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@140005ce8"
+  },
+  "0x80BAE871": {
+    "code": 2159732849,
+    "method": "IN_DIRECT",
+    "device_type": "0x80BA",
+    "function": "0xA1C",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "data@140004ad8"
+  },
+  "0x80C90200": {
+    "code": 2160656896,
+    "method": "BUFFERED",
+    "device_type": "0x80C9",
+    "function": "0x080",
+    "access": "ANY",
+    "priority": 50,
+    "source": "data@14000a17c"
+  },
+  "0x80E6158B": {
+    "code": 2162562443,
+    "method": "NEITHER",
+    "device_type": "0x80E6",
+    "function": "0x562",
+    "access": "ANY",
+    "priority": 90,
+    "source": "data@140004024"
+  },
+  "0x80EC72CA": {
+    "code": 2162979530,
+    "method": "OUT_DIRECT",
+    "device_type": "0x80EC",
+    "function": "0xCB2",
+    "access": "READ",
+    "priority": 50,
+    "source": "data@1400082f0"
+  },
+  "0x80EC8148": {
+    "code": 2162983240,
+    "method": "BUFFERED",
+    "device_type": "0x80EC",
+    "function": "0x052",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "data@1400014cc"
+  },
+  "0x80EEEEFF": {
+    "code": 2163142399,
+    "method": "NEITHER",
+    "device_type": "0x80EE",
+    "function": "0xBBF",
+    "access": "READ|WRITE",
+    "priority": 90,
+    "source": "data@140003a2c"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "driver": "RTCore64.sys",
+  "ioctl_count": 20,
+  "dangerous_functions": [
+    "MmUnmapIoSpace in FUN_00011438",
+    "wrmsr in FUN_00011438",
+    "rdmsr in FUN_00011438",
+    "ZwMapViewOfSection in FUN_00011150",
+    "MmMapIoSpace in FUN_00011384"
+  ],
+  "0x80000000": {
+    "code": 2147483648,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x000",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002000": {
+    "code": 2147491840,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x800",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002004": {
+    "code": 2147491844,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x801",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002008": {
+    "code": 2147491848,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x802",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x8000200C": {
+    "code": 2147491852,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x803",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002010": {
+    "code": 2147491856,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x804",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002014": {
+    "code": 2147491860,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x805",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002018": {
+    "code": 2147491864,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x806",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x8000201C": {
+    "code": 2147491868,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x807",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002028": {
+    "code": 2147491880,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x80A",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x8000202C": {
+    "code": 2147491884,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x80B",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x8000202D": {
+    "code": 2147491885,
+    "method": "IN_DIRECT",
+    "device_type": "0x8000",
+    "function": "0x80B",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002030": {
+    "code": 2147491888,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x80C",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002034": {
+    "code": 2147491892,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x80D",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002040": {
+    "code": 2147491904,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x810",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002044": {
+    "code": 2147491908,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x811",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002048": {
+    "code": 2147491912,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x812",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x8000204C": {
+    "code": 2147491916,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x813",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002050": {
+    "code": 2147491920,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x814",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  },
+  "0x80002054": {
+    "code": 2147491924,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x815",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011438"
+  }
+}

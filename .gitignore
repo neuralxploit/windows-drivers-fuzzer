@@ -1,0 +1,44 @@
+# Rust build artifacts
+target/
+*.pdb
+*.ilk
+*.lib
+
+# Crash outputs (generated)
+crashes/
+*.crash
+*.dmp
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Driver binaries (legal issues)
+*.sys
+
+# Compiled executables (rebuild from source)
+*.exe
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+
+# Sensitive / generated data
+*.last_run_timestamp
+kernel_addresses.txt

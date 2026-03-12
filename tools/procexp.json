@@ -1,0 +1,107 @@
+{
+  "driver": "PROCEXP152.SYS",
+  "device_path": "\\\\.\\PROCEXP152",
+  "ioctl_count": 10,
+  "ioctls": {
+    "0x00222500": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 2368,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223000": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3072,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00226415": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "READ",
+      "function": 2309,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227215": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "READ",
+      "function": 3205,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227F00": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 4032,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B800": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3584,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B805": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3585,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B823": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3592,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA20": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3720,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF00": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 4032,
+      "device_type": 34,
+      "source": "driver"
+    }
+  }
+}

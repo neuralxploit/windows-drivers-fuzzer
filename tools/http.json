@@ -1,0 +1,987 @@
+{
+  "driver": "http.sys",
+  "device_path": "\\\\.\\http",
+  "ioctl_count": 98,
+  "ioctls": {
+    "0x00222081": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "ANY",
+      "function": 2080,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00222088": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 2082,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022208D": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "ANY",
+      "function": 2083,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x002220B9": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "ANY",
+      "function": 2094,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00222523": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 2376,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00222800": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 2560,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00222883": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 2592,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00222889": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "ANY",
+      "function": 2594,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022289F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 2599,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223002": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "ANY",
+      "function": 3072,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223006": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "ANY",
+      "function": 3073,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223083": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3104,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022308F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3107,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022309F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3111,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223400": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3328,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223408": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3330,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223417": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3333,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022341E": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "ANY",
+      "function": 3335,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022341F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3335,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223421": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "ANY",
+      "function": 3336,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223423": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3336,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022343A": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "ANY",
+      "function": 3342,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022360D": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "ANY",
+      "function": 3459,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223883": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3616,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022388F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3619,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022389F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "ANY",
+      "function": 3623,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223D00": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3904,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00223D68": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "ANY",
+      "function": 3930,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00226000": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 2048,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00226006": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "READ",
+      "function": 2049,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022600B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "READ",
+      "function": 2050,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022600C": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 2051,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00226400": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 2304,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00226408": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 2306,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022641A": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "READ",
+      "function": 2310,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022641B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "READ",
+      "function": 2310,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022641F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "READ",
+      "function": 2311,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00226423": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "READ",
+      "function": 2312,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227006": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "READ",
+      "function": 3073,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022700B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "READ",
+      "function": 3074,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022700C": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3075,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227010": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3076,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227013": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "READ",
+      "function": 3076,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227015": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "READ",
+      "function": 3077,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x002272DC": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3255,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227400": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3328,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227410": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3332,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x00227880": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "READ",
+      "function": 3616,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022AC00": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 2816,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B3E8": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3322,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B7CA": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3570,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B7E8": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3578,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B841": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3600,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B900": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3648,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B901": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3648,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B90F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3651,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B911": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3652,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B914": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3653,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B91B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3654,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B91C": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3655,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B91F": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3655,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B929": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3658,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B930": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3660,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B940": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3664,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B96B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3674,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9A9": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3690,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9C0": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3696,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9C7": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3697,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9C8": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3698,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9CA": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3698,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9CC": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3699,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9D9": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "WRITE",
+      "function": 3702,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022B9FF": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3711,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA20": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3720,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BA40": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3728,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BB00": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "WRITE",
+      "function": 3776,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BBFF": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "WRITE",
+      "function": 3839,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BD1E": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 3911,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF0A": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 4034,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022BF26": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "WRITE",
+      "function": 4041,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E011": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 2052,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E015": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 2053,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E016": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "RW",
+      "function": 2053,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E400": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 2304,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E408": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 2306,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E417": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "RW",
+      "function": 2309,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E41B": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "NEITHER",
+      "access": "RW",
+      "function": 2310,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E745": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 2513,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022E800": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 2560,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F011": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 3076,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F016": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "RW",
+      "function": 3077,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F400": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 3328,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F408": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 3330,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F46D": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 3355,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F772": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "OUT_DIRECT",
+      "access": "RW",
+      "function": 3548,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F800": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "BUFFERED",
+      "access": "RW",
+      "function": 3584,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022F981": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 3680,
+      "device_type": 34,
+      "source": "driver"
+    },
+    "0x0022FB81": {
+      "min_input_size": 0,
+      "max_input_size": 4096,
+      "min_output_size": 0,
+      "method": "IN_DIRECT",
+      "access": "RW",
+      "function": 3808,
+      "device_type": 34,
+      "source": "driver"
+    }
+  }
+}

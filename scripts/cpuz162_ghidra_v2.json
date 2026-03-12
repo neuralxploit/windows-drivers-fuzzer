@@ -1,0 +1,64 @@
+{
+  "driver": "cpuz162.sys",
+  "ioctl_count": 6,
+  "dangerous_functions": [
+    "MmMapIoSpace in FUN_00011730",
+    "MmUnmapIoSpace in FUN_00011730",
+    "wrmsr in FUN_00011730",
+    "rdmsr in FUN_00011730"
+  ],
+  "0x00011038": {
+    "code": 69688,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x40E",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011010"
+  },
+  "0x00011098": {
+    "code": 69784,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x426",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011060"
+  },
+  "0x00013D8A": {
+    "code": 81290,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0xF62",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011730"
+  },
+  "0x00013DAE": {
+    "code": 81326,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0xF6B",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011730"
+  },
+  "0x80000000": {
+    "code": 2147483648,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x000",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_00011730"
+  },
+  "0x87654321": {
+    "code": 2271560481,
+    "method": "IN_DIRECT",
+    "device_type": "0x8765",
+    "function": "0x0C8",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_00011730"
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "driver": "http.sys",
+  "ioctl_count": 45,
+  "dangerous_functions": [
+    "MmMapLockedPages in FUN_140016520",
+    "MmMapLockedPages in FUN_1400174e0",
+    "MmMapLockedPages in FUN_140018050",
+    "MmMapLockedPages in FUN_140018f70",
+    "MmMapLockedPages in FUN_14001a330",
+    "MmMapLockedPages in FUN_14001b550",
+    "MmMapLockedPages in FUN_14001d9ec",
+    "MmMapLockedPages in FUN_140038ac0",
+    "MmMapLockedPages in FUN_14003a1d8",
+    "MmMapLockedPages in FUN_140042740",
+    "MmMapLockedPages in FUN_140049bb4",
+    "ProbeForWrite in FUN_14004d7a0",
+    "MmMapLockedPages in FUN_1400508c0",
+    "MmMapLockedPages in FUN_140050e80",
+    "MmMapLockedPages in FUN_140052580",
+    "MmMapLockedPages in FUN_140052ad4",
+    "MmMapLockedPages in FUN_1400543f0",
+    "ProbeForWrite in FUN_140075230",
+    "MmMapLockedPages in FUN_140086ed4",
+    "MmMapLockedPages in FUN_1400876ac",
+    "MmMapLockedPages in FUN_14008f280",
+    "MmMapLockedPages in FUN_1400a953c",
+    "MmMapLockedPages in FUN_1400de13c",
+    "MmMapLockedPages in FUN_1400de450",
+    "MmMapLockedPages in FUN_1400de64c",
+    "MmMapLockedPages in FUN_1400f8ab4",
+    "MmMapLockedPages in FUN_1400ff880",
+    "MmMapLockedPages in FUN_140108460",
+    "MmMapLockedPages in FUN_140116b58",
+    "MmMapLockedPages in FUN_140153ac6",
+    "MmMapLockedPages in FUN_1401577f8"
+  ],
+  "0x00014000": {
+    "code": 81920,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x000",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_14000c630"
+  },
+  "0x00014001": {
+    "code": 81921,
+    "method": "IN_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x000",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_140015d40"
+  },
+  "0x00014002": {
+    "code": 81922,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x000",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_140028e90"
+  },
+  "0x00014003": {
+    "code": 81923,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x000",
+    "access": "READ",
+    "priority": 90,
+    "source": "FUN_140031480"
+  },
+  "0x00014004": {
+    "code": 81924,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x001",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_1400411c0"
+  },
+  "0x00014005": {
+    "code": 81925,
+    "method": "IN_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x001",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_140050310"
+  },
+  "0x00014006": {
+    "code": 81926,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x001",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_14005f6b0"
+  },
+  "0x00014007": {
+    "code": 81927,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x001",
+    "access": "READ",
+    "priority": 90,
+    "source": "FUN_140070190"
+  },
+  "0x00014008": {
+    "code": 81928,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x002",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_140083cb0"
+  },
+  "0x00014009": {
+    "code": 81929,
+    "method": "IN_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x002",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_14009ce84"
+  },
+  "0x0001400A": {
+    "code": 81930,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x002",
+    "access": "READ",
+    "priority": 50,
+    "source": "__C_specific_handler"
+  },
+  "0x0001400C": {
+    "code": 81932,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x003",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_1400c0f6c"
+  },
+  "0x0001400D": {
+    "code": 81933,
+    "method": "IN_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x003",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_1400d1470"
+  },
+  "0x0001400E": {
+    "code": 81934,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x003",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_1400e1e40"
+  },
+  "0x0001400F": {
+    "code": 81935,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x003",
+    "access": "READ",
+    "priority": 90,
+    "source": "FUN_1400f2230"
+  },
+  "0x00014010": {
+    "code": 81936,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x004",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_14010d6f4"
+  },
+  "0x00014011": {
+    "code": 81937,
+    "method": "IN_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x004",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_14011c824"
+  },
+  "0x00014013": {
+    "code": 81939,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x004",
+    "access": "READ",
+    "priority": 90,
+    "source": "FUN_14012ff30"
+  },
+  "0x00014014": {
+    "code": 81940,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x005",
+    "access": "READ",
+    "priority": 50,
+    "source": "_guard_dispatch_icall"
+  },
+  "0x00014015": {
+    "code": 81941,
+    "method": "IN_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x005",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_140018bf0"
+  },
+  "0x00014016": {
+    "code": 81942,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x005",
+    "access": "READ",
+    "priority": 50,
+    "source": "FUN_140088c38"
+  },
+  "0x80000000": {
+    "code": 2147483648,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0x000",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_14000a1f0"
+  },
+  "0x80000002": {
+    "code": 2147483650,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8000",
+    "function": "0x000",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1401ba430"
+  },
+  "0x80000005": {
+    "code": 2147483653,
+    "method": "IN_DIRECT",
+    "device_type": "0x8000",
+    "function": "0x001",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_14002353c"
+  },
+  "0x80000006": {
+    "code": 2147483654,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8000",
+    "function": "0x001",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1400da5e0"
+  },
+  "0x8000001A": {
+    "code": 2147483674,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8000",
+    "function": "0x006",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140113128"
+  },
+  "0x80003AAB": {
+    "code": 2147498667,
+    "method": "NEITHER",
+    "device_type": "0x8000",
+    "function": "0xEAA",
+    "access": "ANY",
+    "priority": 90,
+    "source": "FUN_1400ab60c"
+  },
+  "0x80003AAC": {
+    "code": 2147498668,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0xEAB",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1400ab60c"
+  },
+  "0x80003BC4": {
+    "code": 2147498948,
+    "method": "BUFFERED",
+    "device_type": "0x8000",
+    "function": "0xEF1",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_14003a344"
+  },
+  "0x80003BC5": {
+    "code": 2147498949,
+    "method": "IN_DIRECT",
+    "device_type": "0x8000",
+    "function": "0xEF1",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140038668"
+  },
+  "0x80003BC6": {
+    "code": 2147498950,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8000",
+    "function": "0xEF1",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_14010eb24"
+  },
+  "0x80010001": {
+    "code": 2147549185,
+    "method": "IN_DIRECT",
+    "device_type": "0x8001",
+    "function": "0x000",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1401ba4b0"
+  },
+  "0x80090300": {
+    "code": 2148074240,
+    "method": "BUFFERED",
+    "device_type": "0x8009",
+    "function": "0x0C0",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1400dea04"
+  },
+  "0x80090303": {
+    "code": 2148074243,
+    "method": "NEITHER",
+    "device_type": "0x8009",
+    "function": "0x0C0",
+    "access": "ANY",
+    "priority": 90,
+    "source": "FUN_140125080"
+  },
+  "0x80090304": {
+    "code": 2148074244,
+    "method": "BUFFERED",
+    "device_type": "0x8009",
+    "function": "0x0C1",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140125f70"
+  },
+  "0x80090308": {
+    "code": 2148074248,
+    "method": "BUFFERED",
+    "device_type": "0x8009",
+    "function": "0x0C2",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1400dea04"
+  },
+  "0x8009030C": {
+    "code": 2148074252,
+    "method": "BUFFERED",
+    "device_type": "0x8009",
+    "function": "0x0C3",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140127840"
+  },
+  "0x80090318": {
+    "code": 2148074264,
+    "method": "BUFFERED",
+    "device_type": "0x8009",
+    "function": "0x0C6",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140064758"
+  },
+  "0x80090321": {
+    "code": 2148074273,
+    "method": "IN_DIRECT",
+    "device_type": "0x8009",
+    "function": "0x0C8",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140064758"
+  },
+  "0x80090326": {
+    "code": 2148074278,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8009",
+    "function": "0x0C9",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_140125080"
+  },
+  "0x80090331": {
+    "code": 2148074289,
+    "method": "IN_DIRECT",
+    "device_type": "0x8009",
+    "function": "0x0CC",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1400e4b58"
+  },
+  "0x8364ED5D": {
+    "code": 2204429661,
+    "method": "IN_DIRECT",
+    "device_type": "0x8364",
+    "function": "0xB57",
+    "access": "READ|WRITE",
+    "priority": 50,
+    "source": "FUN_1400c0f6c"
+  },
+  "0x8800001A": {
+    "code": 2281701402,
+    "method": "OUT_DIRECT",
+    "device_type": "0x8800",
+    "function": "0x006",
+    "access": "ANY",
+    "priority": 50,
+    "source": "FUN_1401368dc"
+  },
+  "0x88888889": {
+    "code": 2290649225,
+    "method": "IN_DIRECT",
+    "device_type": "0x8888",
+    "function": "0x222",
+    "access": "WRITE",
+    "priority": 50,
+    "source": "FUN_1400dbfc8"
+  },
+  "0x8E947973": {
+    "code": 2392095091,
+    "method": "NEITHER",
+    "device_type": "0x8E94",
+    "function": "0xE5C",
+    "access": "READ",
+    "priority": 90,
+    "source": "FUN_1400c0f6c"
+  }
+}

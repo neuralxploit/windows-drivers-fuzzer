@@ -1,0 +1,681 @@
+{
+  "driver": "afd.sys",
+  "ioctl_count": 75,
+  "dangerous_functions": [
+  ],
+  "0x00012003": {
+    "code": 73731,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x800",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012007": {
+    "code": 73735,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x801",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001200B": {
+    "code": 73739,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x802",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001200C": {
+    "code": 73740,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x803",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x00012010": {
+    "code": 73744,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x804",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x00012017": {
+    "code": 73751,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x805",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001201B": {
+    "code": 73755,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x806",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001201F": {
+    "code": 73759,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x807",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012023": {
+    "code": 73763,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x808",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012024": {
+    "code": 73764,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x809",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x0001202B": {
+    "code": 73771,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x80A",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001202F": {
+    "code": 73775,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x80B",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012033": {
+    "code": 73779,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x80C",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012037": {
+    "code": 73783,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x80D",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001203B": {
+    "code": 73787,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x80E",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001203F": {
+    "code": 73791,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x80F",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012043": {
+    "code": 73795,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x810",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012047": {
+    "code": 73799,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x811",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001204B": {
+    "code": 73803,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x812",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001204F": {
+    "code": 73807,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x813",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012053": {
+    "code": 73811,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x814",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012057": {
+    "code": 73815,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x815",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001205B": {
+    "code": 73819,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x816",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001205F": {
+    "code": 73823,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x817",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012063": {
+    "code": 73827,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x818",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012067": {
+    "code": 73831,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x819",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001206B": {
+    "code": 73835,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x81A",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001206F": {
+    "code": 73839,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x81B",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012073": {
+    "code": 73843,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x81C",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012077": {
+    "code": 73847,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x81D",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001207B": {
+    "code": 73851,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x81E",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001207F": {
+    "code": 73855,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x81F",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012083": {
+    "code": 73859,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x820",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012087": {
+    "code": 73863,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x821",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001208B": {
+    "code": 73867,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x822",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001208C": {
+    "code": 73868,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x823",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x00012090": {
+    "code": 73872,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x824",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x00012094": {
+    "code": 73876,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x825",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x00012098": {
+    "code": 73880,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x826",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x0001209F": {
+    "code": 73887,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x827",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120A0": {
+    "code": 73888,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x828",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x000120A7": {
+    "code": 73895,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x829",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120AB": {
+    "code": 73899,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x82A",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120AC": {
+    "code": 73900,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x82B",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x000120B3": {
+    "code": 73907,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x82C",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120B4": {
+    "code": 73908,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x82D",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x000120BB": {
+    "code": 73915,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x82E",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120BF": {
+    "code": 73919,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x82F",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120C3": {
+    "code": 73923,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x830",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120C7": {
+    "code": 73927,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x831",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120CB": {
+    "code": 73931,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x832",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120CF": {
+    "code": 73935,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x833",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120D3": {
+    "code": 73939,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x834",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120D7": {
+    "code": 73943,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x835",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120DB": {
+    "code": 73947,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x836",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120DF": {
+    "code": 73951,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x837",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120E2": {
+    "code": 73954,
+    "method": "OUT_DIRECT",
+    "device_type": "0x0001",
+    "function": "0x838",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x000120E7": {
+    "code": 73959,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x839",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120EB": {
+    "code": 73963,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x83A",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120EF": {
+    "code": 73967,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x83B",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120F3": {
+    "code": 73971,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x83C",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120F7": {
+    "code": 73975,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x83D",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120FB": {
+    "code": 73979,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x83E",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x000120FF": {
+    "code": 73983,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x83F",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012103": {
+    "code": 73987,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x840",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012107": {
+    "code": 73991,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x841",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001210B": {
+    "code": 73995,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x842",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001210C": {
+    "code": 73996,
+    "method": "BUFFERED",
+    "device_type": "0x0001",
+    "function": "0x843",
+    "access": "ANY",
+    "priority": 50,
+    "source": "table@14007b200"
+  },
+  "0x00012113": {
+    "code": 74003,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x844",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012117": {
+    "code": 74007,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x845",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001211B": {
+    "code": 74011,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x846",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x0001211F": {
+    "code": 74015,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x847",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012123": {
+    "code": 74019,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x848",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00012127": {
+    "code": 74023,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x849",
+    "access": "ANY",
+    "priority": 90,
+    "source": "table@14007b200"
+  },
+  "0x00014007": {
+    "code": 81927,
+    "method": "NEITHER",
+    "device_type": "0x0001",
+    "function": "0x001",
+    "access": "READ",
+    "priority": 90,
+    "source": "_guard_dispatch_icall"
+  }
+}
