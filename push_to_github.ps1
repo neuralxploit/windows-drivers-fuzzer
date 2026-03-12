@@ -32,16 +32,12 @@ Write-Host "Working directory: $projectPath" -ForegroundColor Gray
 
 # Check if gh is authenticated
 Write-Host "`nChecking GitHub authentication..." -ForegroundColor Yellow
-$authStatus = gh auth status 2>&1
-if ($LASTEXITCODE -ne 0) {
+try {
+    gh auth status 2>&1 | Out-Null
+} catch {
     Write-Host "Not logged in to GitHub. Starting login..." -ForegroundColor Yellow
     gh auth login
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "GitHub login failed. Please run 'gh auth login' manually." -ForegroundColor Red
-        exit 1
-    }
 }
-Write-Host "GitHub authentication OK!" -ForegroundColor Green
 
 # Initialize git if needed
 if (-not (Test-Path ".git")) {
@@ -49,8 +45,26 @@ if (-not (Test-Path ".git")) {
     git init
 }
 
+# Copy release binaries to releases folder
+Write-Host "Copying release binaries..." -ForegroundColor Green
+$releaseDir = "releases"
+if (-not (Test-Path $releaseDir)) {
+    New-Item -ItemType Directory -Path $releaseDir | Out-Null
+}
+$binaries = @(
+    "target\x86_64-pc-windows-msvc\release\executor.exe",
+    "target\x86_64-pc-windows-msvc\release\controller.exe",
+    "target\x86_64-pc-windows-msvc\release\ladybug.exe"
+)
+foreach ($bin in $binaries) {
+    if (Test-Path $bin) {
+        Copy-Item $bin $releaseDir -Force
+        Write-Host "  Copied: $(Split-Path $bin -Leaf)" -ForegroundColor Gray
+    }
+}
+
 # Add all files
-Write-Host "Adding files to staging..." -ForegroundColor Green
+Write-Host "`nAdding files to staging..." -ForegroundColor Green
 git add .
 
 # Commit
@@ -60,10 +74,10 @@ git commit -m "Initial commit: Windows kernel driver fuzzer
 - Coverage-guided fuzzer written in Rust (Ladybug)
 - AFL-style mutation engine with 15+ strategies
 - IOCTL discovery and probing for drivers
+- Distributed fuzzing: executor (VM) + controller (host)
 - Ghidra analysis scripts for driver decompilation
 - Crash triage and exploit pattern detection
-- Python tools for vulnerability analysis
-- Support for ahcache, AFD, RTCore64, and more drivers"
+- Python tools for vulnerability analysis"
 
 # Create GitHub repo
 Write-Host "`nCreating GitHub repository: $RepoName" -ForegroundColor Green

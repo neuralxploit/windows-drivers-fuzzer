@@ -1,6 +1,27 @@
-# WinDriver Fuzzer (Rust Edition)
+# Windows Drivers Fuzzer (Ladybug)
 
 A high-performance, coverage-guided Windows kernel driver fuzzer written in Rust.
+
+## Architecture
+
+```
+┌─────────────────┐         TCP          ┌─────────────────┐
+│   Controller    │ ◄──────────────────► │    Executor     │
+│   (Host PC)     │      Port 9999       │   (Inside VM)   │
+│                 │                       │                 │
+│ - Fuzzing logic │                       │ - Driver access │
+│ - Crash tracking│                       │ - IOCTL exec    │
+│ - Corpus mgmt   │                       │ - SEH handling  │
+└─────────────────┘                       └─────────────────┘
+```
+
+### Components
+
+| Component | Location | Purpose |
+|-----------|----------|---------|
+| **Controller** | Host machine | Orchestrates fuzzing, manages corpus, tracks crashes |
+| **Executor** | Inside VM | Executes IOCTLs against target driver, catches crashes |
+| **Ladybug** | Standalone | Single-machine fuzzer (no VM needed) |
 
 ## Features
 
@@ -10,6 +31,7 @@ A high-performance, coverage-guided Windows kernel driver fuzzer written in Rust
 - **IOCTL Discovery**: Auto-probe for implemented IOCTL handlers
 - **Driver Enumeration**: Scan for accessible kernel drivers
 - **Crash Detection**: Catches interesting errors (access violations, stack overflows, etc.)
+- **Distributed Fuzzing**: TCP-based controller/executor for VM isolation
 - **Fast**: Native Rust performance with zero-copy I/O where possible
 
 ## Building
@@ -17,13 +39,38 @@ A high-performance, coverage-guided Windows kernel driver fuzzer written in Rust
 Requires Rust 1.70+ and Windows SDK.
 
 ```powershell
-# Build release version
+# Build all components
 cargo build --release
 
-# The binary will be at target\release\windriver_fuzzer.exe
+# Binaries will be at:
+# - target\release\ladybug.exe (standalone fuzzer)
+# - target\release\executor.exe (VM agent)
+# - target\release\controller.exe (host controller)
 ```
 
 ## Usage
+
+### Distributed Fuzzing (VM Setup)
+
+**Step 1: Copy executor to VM**
+```powershell
+# On the VM, run executor targeting the driver
+.\executor.exe --port 9999 --device "\\.\TargetDriver"
+```
+
+**Step 2: Run controller on host**
+```powershell
+# On host machine, connect to VM and fuzz
+.\controller.exe --target 192.168.1.100:9999 --ioctls ioctls.txt --output crashes
+```
+
+The controller will:
+1. Connect to executor via TCP
+2. Send mutated IOCTL inputs
+3. Detect crashes (connection loss = VM crashed)
+4. Save crash inputs to `crashes/` directory
+
+### Standalone Fuzzing (Ladybug)
 
 ### Discover Available Drivers
 ```powershell
